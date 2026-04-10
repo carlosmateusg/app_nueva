@@ -32,22 +32,22 @@ class login extends StatelessWidget{
           Row(
             mainAxisAlignment: MainAxisAlignment.center, //Esto es para centrar los botones en la pantalla.
             children: [
-              ElevatedButton(onPressed: ()=>{}, //Esto es para crear un botón, el onPressed es para definir la acción que se ejecutará cuando se presione el botón, en este caso no hace nada.
+              ElevatedButton(onPressed: () {}, //Esto es para crear un botón, el onPressed es para definir la acción que se ejecutará cuando se presione el botón, en este caso no hace nada.
               child: Text("Click me!")),
               SizedBox(width: 20), //Esto es para agregar un espacio entre los botones.
-              ElevatedButton(onPressed: ()=>{},
+              ElevatedButton(onPressed: () {},
               child: Text("Click me too!")),
             ],
           )
         ],
-        ),
-        )
-      floatingActionButton: FloatingActionButton( //Esto es para crear un botón flotante, el onPressed es para definir la acción que se ejecutará cuando se presione el botón, en este caso no hace nada.
-        onPressed: ()=>{
-          print("Clicke me bro!"),
+      ),
+    ),
+    floatingActionButton: FloatingActionButton( //Esto es para crear un botón flotante, el onPressed es para definir la acción que se ejecutará cuando se presione el botón, en este caso no hace nada.
+        onPressed: () {
+          print("Clicke me bro!");
         },
         child: Icon(Icons.plus_one), //Esto es para agregar un ícono al botón flotante.
-    )
+    ),
       )
     );
   }
